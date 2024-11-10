@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рандомне ПП меню</title>
+    <link rel="stylesheet" href="style.css">
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text with Image</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Бічне меню з днями тижня -->
+        <nav class="sidebar">
+            <ul id="day-list">
+                   
+                <li data-day="Понеділок">Понеділок</li>
+                <li data-day="Вівторок">Вівторок</li>
+                <li data-day="Середа">Середа</li>
+                <li data-day="Четвер">Четвер</li>
+                <li data-day="П'ятниця">П'ятниця</li>
+                <li data-day="Субота">Субота</li>
+                <li data-day="Неділя">Неділя</li>
+            </ul>
+        </nav>
+
+        <!-- Основна частина для генерації меню -->
+        <div class="main-content">
+            <h2 id="selected-day-title">Понеділок</h2>
+             <img class="image" src="https://eco-buffet.com/wp-content/uploads/2022/12/blog_dostavka_pravylnohokharchuvannia_1.jpg"/>
+            <button id="generate-menu">Згенерувати рандомне меню</button>
+           
+
+            <!-- Виведення рандомного меню -->
+            <div class="menu-output">
+                <h3>Меню на <span id="selected-day">Понеділок</span>:</h3>
+                <ul id="menu-list"></ul>
+                <p>Загальна кількість калорій: <span id="total-calories">0</span> ккал</p>
+            </div>
+
+            <!-- Додавання власної страви -->
+            <div class="input-section">
+                <label for="meal-input">Додайте свою страву:</label>
+                <input type="text" id="meal-input" placeholder="Назва страви">
+                <label for="calories-input">Калорії (ккал):</label>
+                <input type="number" id="calories-input" placeholder="Калорії">
+                <button id="add-meal">Додати страву</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src='https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js'></script>
+</body>
+</html>
